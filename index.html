@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>    
+
+<body>
+<div class="navbar bg-info text-center">
+<div class="container-fluid">    
+<span class="navbar-brand mb-0 h1">Weather Dashboard</span> </div>
+</div>
+
+<main>
+ <div class="row gx-0 p-3">
+<div class="search-bar col-12 col-md-3 border p-2 mb-3">
+<h2 class="search-text">Enter a city:</h2>
+
+<form class="form-inline active-cyan-4" id="search-form">
+<input id="city-input" class="form-control col-12 p-2 my-2" type="search" placeholder="Enter city here" aria-label="Search"/>
+<button class="searchBtn">Search</button></form>
+<hr />
+
+<ul class="col-12 list-group" id="city-list"></ul>
+</div>
+
+<div class="cards col-12 col-md-9 border p-2 mb-3">
+<div class="d-flex flex-column" id="weather-cards-container"></div></div>
+</div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
